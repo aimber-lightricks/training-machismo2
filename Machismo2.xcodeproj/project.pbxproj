@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32E2D66255A86FF0089BAA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D65255A86FF0089BAA7 /* AppDelegate.m */; };
+		D32E2D69255A86FF0089BAA7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D68255A86FF0089BAA7 /* SceneDelegate.m */; };
+		D32E2D6C255A86FF0089BAA7 /* GamesCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */; };
+		D32E2D6F255A86FF0089BAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D6D255A86FF0089BAA7 /* Main.storyboard */; };
+		D32E2D71255A87010089BAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D70255A87010089BAA7 /* Assets.xcassets */; };
+		D32E2D74255A87010089BAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D72255A87010089BAA7 /* LaunchScreen.storyboard */; };
+		D32E2D77255A87010089BAA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D76255A87010089BAA7 /* main.m */; };
+		D32E2D81255A87010089BAA7 /* Machismo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D80255A87010089BAA7 /* Machismo2Tests.m */; };
+		D32E2D8C255A87010089BAA7 /* Machismo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D8B255A87010089BAA7 /* Machismo2UITests.m */; };
+		D32E2DAB255AA5C50089BAA7 /* PlayingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DAA255AA5C50089BAA7 /* PlayingCardViewController.m */; };
+		D32E2DC1255AA5EC0089BAA7 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DB4255AA5EC0089BAA7 /* CardMatchingGame.m */; };
+		D32E2DC2255AA5EC0089BAA7 /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DB5255AA5EC0089BAA7 /* SetCard.m */; };
+		D32E2DC3255AA5EC0089BAA7 /* PlayngCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DB7255AA5EC0089BAA7 /* PlayngCard.m */; };
+		D32E2DC4255AA5EC0089BAA7 /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DB8255AA5EC0089BAA7 /* SetCardDeck.m */; };
+		D32E2DC5255AA5EC0089BAA7 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DBB255AA5EC0089BAA7 /* Deck.m */; };
+		D32E2DC6255AA5EC0089BAA7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DBD255AA5EC0089BAA7 /* Card.m */; };
+		D32E2DC7255AA5EC0089BAA7 /* PlayngCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D32E2D7D255A87010089BAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32E2D59255A86FF0089BAA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32E2D60255A86FF0089BAA7;
+			remoteInfo = Machismo2;
+		};
+		D32E2D88255A87010089BAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32E2D59255A86FF0089BAA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32E2D60255A86FF0089BAA7;
+			remoteInfo = Machismo2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D32E2D61255A86FF0089BAA7 /* Machismo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Machismo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32E2D64255A86FF0089BAA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D32E2D65255A86FF0089BAA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D32E2D67255A86FF0089BAA7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D32E2D68255A86FF0089BAA7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D32E2D6A255A86FF0089BAA7 /* GamesCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamesCommonViewController.h; sourceTree = "<group>"; };
+		D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamesCommonViewController.m; sourceTree = "<group>"; };
+		D32E2D6E255A86FF0089BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D32E2D70255A87010089BAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32E2D73255A87010089BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D32E2D75255A87010089BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32E2D76255A87010089BAA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D32E2D7C255A87010089BAA7 /* Machismo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Machismo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32E2D80255A87010089BAA7 /* Machismo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Machismo2Tests.m; sourceTree = "<group>"; };
+		D32E2D82255A87010089BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32E2D87255A87010089BAA7 /* Machismo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Machismo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32E2D8B255A87010089BAA7 /* Machismo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Machismo2UITests.m; sourceTree = "<group>"; };
+		D32E2D8D255A87010089BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32E2DA9255AA5C50089BAA7 /* PlayingCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardViewController.h; sourceTree = "<group>"; };
+		D32E2DAA255AA5C50089BAA7 /* PlayingCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardViewController.m; sourceTree = "<group>"; };
+		D32E2DB3255AA5EC0089BAA7 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		D32E2DB4255AA5EC0089BAA7 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		D32E2DB5255AA5EC0089BAA7 /* SetCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCard.m; sourceTree = "<group>"; };
+		D32E2DB6255AA5EC0089BAA7 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		D32E2DB7255AA5EC0089BAA7 /* PlayngCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayngCard.m; sourceTree = "<group>"; };
+		D32E2DB8255AA5EC0089BAA7 /* SetCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardDeck.m; sourceTree = "<group>"; };
+		D32E2DB9255AA5EC0089BAA7 /* PlayngCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayngCardDeck.h; sourceTree = "<group>"; };
+		D32E2DBA255AA5EC0089BAA7 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		D32E2DBB255AA5EC0089BAA7 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		D32E2DBC255AA5EC0089BAA7 /* PlayngCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayngCard.h; sourceTree = "<group>"; };
+		D32E2DBD255AA5EC0089BAA7 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		D32E2DBE255AA5EC0089BAA7 /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCard.h; sourceTree = "<group>"; };
+		D32E2DBF255AA5EC0089BAA7 /* SetCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardDeck.h; sourceTree = "<group>"; };
+		D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayngCardDeck.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D32E2D5E255A86FF0089BAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D79255A87010089BAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D84255A87010089BAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32E2D58255A86FF0089BAA7 = {
+			isa = PBXGroup;
+			children = (
+				D32E2D63255A86FF0089BAA7 /* Machismo2 */,
+				D32E2D7F255A87010089BAA7 /* Machismo2Tests */,
+				D32E2D8A255A87010089BAA7 /* Machismo2UITests */,
+				D32E2D62255A86FF0089BAA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D32E2D62255A86FF0089BAA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D32E2D61255A86FF0089BAA7 /* Machismo2.app */,
+				D32E2D7C255A87010089BAA7 /* Machismo2Tests.xctest */,
+				D32E2D87255A87010089BAA7 /* Machismo2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D32E2D63255A86FF0089BAA7 /* Machismo2 */ = {
+			isa = PBXGroup;
+			children = (
+				D32E2D64255A86FF0089BAA7 /* AppDelegate.h */,
+				D32E2D65255A86FF0089BAA7 /* AppDelegate.m */,
+				D32E2D67255A86FF0089BAA7 /* SceneDelegate.h */,
+				D32E2D68255A86FF0089BAA7 /* SceneDelegate.m */,
+				D32E2D6A255A86FF0089BAA7 /* GamesCommonViewController.h */,
+				D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */,
+				D32E2D6D255A86FF0089BAA7 /* Main.storyboard */,
+				D32E2D70255A87010089BAA7 /* Assets.xcassets */,
+				D32E2D72255A87010089BAA7 /* LaunchScreen.storyboard */,
+				D32E2D75255A87010089BAA7 /* Info.plist */,
+				D32E2D76255A87010089BAA7 /* main.m */,
+				D32E2DA9255AA5C50089BAA7 /* PlayingCardViewController.h */,
+				D32E2DAA255AA5C50089BAA7 /* PlayingCardViewController.m */,
+				D32E2DB2255AA5EC0089BAA7 /* Model */,
+			);
+			path = Machismo2;
+			sourceTree = "<group>";
+		};
+		D32E2D7F255A87010089BAA7 /* Machismo2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D32E2D80255A87010089BAA7 /* Machismo2Tests.m */,
+				D32E2D82255A87010089BAA7 /* Info.plist */,
+			);
+			path = Machismo2Tests;
+			sourceTree = "<group>";
+		};
+		D32E2D8A255A87010089BAA7 /* Machismo2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D32E2D8B255A87010089BAA7 /* Machismo2UITests.m */,
+				D32E2D8D255A87010089BAA7 /* Info.plist */,
+			);
+			path = Machismo2UITests;
+			sourceTree = "<group>";
+		};
+		D32E2DB2255AA5EC0089BAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D32E2DB3255AA5EC0089BAA7 /* Deck.h */,
+				D32E2DB4255AA5EC0089BAA7 /* CardMatchingGame.m */,
+				D32E2DB5255AA5EC0089BAA7 /* SetCard.m */,
+				D32E2DB6255AA5EC0089BAA7 /* Card.h */,
+				D32E2DB7255AA5EC0089BAA7 /* PlayngCard.m */,
+				D32E2DB8255AA5EC0089BAA7 /* SetCardDeck.m */,
+				D32E2DB9255AA5EC0089BAA7 /* PlayngCardDeck.h */,
+				D32E2DBA255AA5EC0089BAA7 /* CardMatchingGame.h */,
+				D32E2DBB255AA5EC0089BAA7 /* Deck.m */,
+				D32E2DBC255AA5EC0089BAA7 /* PlayngCard.h */,
+				D32E2DBD255AA5EC0089BAA7 /* Card.m */,
+				D32E2DBE255AA5EC0089BAA7 /* SetCard.h */,
+				D32E2DBF255AA5EC0089BAA7 /* SetCardDeck.h */,
+				D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D32E2D60255A86FF0089BAA7 /* Machismo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32E2D90255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2" */;
+			buildPhases = (
+				D32E2D5D255A86FF0089BAA7 /* Sources */,
+				D32E2D5E255A86FF0089BAA7 /* Frameworks */,
+				D32E2D5F255A86FF0089BAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Machismo2;
+			productName = Machismo2;
+			productReference = D32E2D61255A86FF0089BAA7 /* Machismo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D32E2D7B255A87010089BAA7 /* Machismo2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32E2D93255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2Tests" */;
+			buildPhases = (
+				D32E2D78255A87010089BAA7 /* Sources */,
+				D32E2D79255A87010089BAA7 /* Frameworks */,
+				D32E2D7A255A87010089BAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32E2D7E255A87010089BAA7 /* PBXTargetDependency */,
+			);
+			name = Machismo2Tests;
+			productName = Machismo2Tests;
+			productReference = D32E2D7C255A87010089BAA7 /* Machismo2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D32E2D86255A87010089BAA7 /* Machismo2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32E2D96255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2UITests" */;
+			buildPhases = (
+				D32E2D83255A87010089BAA7 /* Sources */,
+				D32E2D84255A87010089BAA7 /* Frameworks */,
+				D32E2D85255A87010089BAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32E2D89255A87010089BAA7 /* PBXTargetDependency */,
+			);
+			name = Machismo2UITests;
+			productName = Machismo2UITests;
+			productReference = D32E2D87255A87010089BAA7 /* Machismo2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D32E2D59255A86FF0089BAA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					D32E2D60255A86FF0089BAA7 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					D32E2D7B255A87010089BAA7 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D32E2D60255A86FF0089BAA7;
+					};
+					D32E2D86255A87010089BAA7 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D32E2D60255A86FF0089BAA7;
+					};
+				};
+			};
+			buildConfigurationList = D32E2D5C255A86FF0089BAA7 /* Build configuration list for PBXProject "Machismo2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D32E2D58255A86FF0089BAA7;
+			productRefGroup = D32E2D62255A86FF0089BAA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D32E2D60255A86FF0089BAA7 /* Machismo2 */,
+				D32E2D7B255A87010089BAA7 /* Machismo2Tests */,
+				D32E2D86255A87010089BAA7 /* Machismo2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D32E2D5F255A86FF0089BAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E2D74255A87010089BAA7 /* LaunchScreen.storyboard in Resources */,
+				D32E2D71255A87010089BAA7 /* Assets.xcassets in Resources */,
+				D32E2D6F255A86FF0089BAA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D7A255A87010089BAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D85255A87010089BAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D32E2D5D255A86FF0089BAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E2DC5255AA5EC0089BAA7 /* Deck.m in Sources */,
+				D32E2DC1255AA5EC0089BAA7 /* CardMatchingGame.m in Sources */,
+				D32E2D6C255A86FF0089BAA7 /* GamesCommonViewController.m in Sources */,
+				D32E2D66255A86FF0089BAA7 /* AppDelegate.m in Sources */,
+				D32E2DC4255AA5EC0089BAA7 /* SetCardDeck.m in Sources */,
+				D32E2DAB255AA5C50089BAA7 /* PlayingCardViewController.m in Sources */,
+				D32E2DC3255AA5EC0089BAA7 /* PlayngCard.m in Sources */,
+				D32E2D77255A87010089BAA7 /* main.m in Sources */,
+				D32E2D69255A86FF0089BAA7 /* SceneDelegate.m in Sources */,
+				D32E2DC6255AA5EC0089BAA7 /* Card.m in Sources */,
+				D32E2DC2255AA5EC0089BAA7 /* SetCard.m in Sources */,
+				D32E2DC7255AA5EC0089BAA7 /* PlayngCardDeck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D78255A87010089BAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E2D81255A87010089BAA7 /* Machismo2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32E2D83255A87010089BAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E2D8C255A87010089BAA7 /* Machismo2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D32E2D7E255A87010089BAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32E2D60255A86FF0089BAA7 /* Machismo2 */;
+			targetProxy = D32E2D7D255A87010089BAA7 /* PBXContainerItemProxy */;
+		};
+		D32E2D89255A87010089BAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32E2D60255A86FF0089BAA7 /* Machismo2 */;
+			targetProxy = D32E2D88255A87010089BAA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D32E2D6D255A86FF0089BAA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32E2D6E255A86FF0089BAA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D32E2D72255A87010089BAA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32E2D73255A87010089BAA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D32E2D8E255A87010089BAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D32E2D8F255A87010089BAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D32E2D91255A87010089BAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D32E2D92255A87010089BAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D32E2D94255A87010089BAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Machismo2.app/Machismo2";
+			};
+			name = Debug;
+		};
+		D32E2D95255A87010089BAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Machismo2.app/Machismo2";
+			};
+			name = Release;
+		};
+		D32E2D97255A87010089BAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Machismo2;
+			};
+			name = Debug;
+		};
+		D32E2D98255A87010089BAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				INFOPLIST_FILE = Machismo2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Machismo2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D32E2D5C255A86FF0089BAA7 /* Build configuration list for PBXProject "Machismo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32E2D8E255A87010089BAA7 /* Debug */,
+				D32E2D8F255A87010089BAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32E2D90255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32E2D91255A87010089BAA7 /* Debug */,
+				D32E2D92255A87010089BAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32E2D93255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32E2D94255A87010089BAA7 /* Debug */,
+				D32E2D95255A87010089BAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32E2D96255A87010089BAA7 /* Build configuration list for PBXNativeTarget "Machismo2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32E2D97255A87010089BAA7 /* Debug */,
+				D32E2D98255A87010089BAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D32E2D59255A86FF0089BAA7 /* Project object */;
+}
