@@ -167,20 +167,20 @@
 		D32E2DB2255AA5EC0089BAA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D32E2DB3255AA5EC0089BAA7 /* Deck.h */,
-				D32E2DB4255AA5EC0089BAA7 /* CardMatchingGame.m */,
-				D32E2DB5255AA5EC0089BAA7 /* SetCard.m */,
 				D32E2DB6255AA5EC0089BAA7 /* Card.h */,
-				D32E2DB7255AA5EC0089BAA7 /* PlayngCard.m */,
-				D32E2DB8255AA5EC0089BAA7 /* SetCardDeck.m */,
-				D32E2DB9255AA5EC0089BAA7 /* PlayngCardDeck.h */,
-				D32E2DBA255AA5EC0089BAA7 /* CardMatchingGame.h */,
-				D32E2DBB255AA5EC0089BAA7 /* Deck.m */,
-				D32E2DBC255AA5EC0089BAA7 /* PlayngCard.h */,
 				D32E2DBD255AA5EC0089BAA7 /* Card.m */,
+				D32E2DBC255AA5EC0089BAA7 /* PlayngCard.h */,
+				D32E2DB7255AA5EC0089BAA7 /* PlayngCard.m */,
 				D32E2DBE255AA5EC0089BAA7 /* SetCard.h */,
-				D32E2DBF255AA5EC0089BAA7 /* SetCardDeck.h */,
+				D32E2DB5255AA5EC0089BAA7 /* SetCard.m */,
+				D32E2DB3255AA5EC0089BAA7 /* Deck.h */,
+				D32E2DBB255AA5EC0089BAA7 /* Deck.m */,
+				D32E2DB9255AA5EC0089BAA7 /* PlayngCardDeck.h */,
 				D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */,
+				D32E2DBF255AA5EC0089BAA7 /* SetCardDeck.h */,
+				D32E2DB8255AA5EC0089BAA7 /* SetCardDeck.m */,
+				D32E2DB4255AA5EC0089BAA7 /* CardMatchingGame.m */,
+				D32E2DBA255AA5EC0089BAA7 /* CardMatchingGame.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -8,12 +8,30 @@
 #import "SetCard.h"
 static const int kSetScore = 1;
 
+@interface SetCard ()
+@property (nonatomic, readwrite) NSInteger shape;
+@property (nonatomic, readwrite) NSInteger color;
+@property (nonatomic, readwrite) NSInteger stripping;
+
+@end
+
 @implementation SetCard
+
+- (instancetype) initWithShape:(NSInteger)shape
+                     withColor:(NSInteger)color
+                 withStripping:(NSInteger)stripping {
+  if (self = [super init]){
+    self.color = color;
+    self.shape = shape;
+    self.stripping = stripping;
+  }
+  return self;
+}
+
 
 - (id) getAttributeFromNSString:(NSString *)attributeString {
   return [self valueForKey:attributeString];
 }
-
 
 
 - (BOOL)isSet: (NSArray *)otherCards forAttribute:(NSString *)attributeString {
@@ -47,55 +65,10 @@ static const int kSetScore = 1;
 - (NSString *)contents {
   return nil;
 }
-@synthesize shape = _shape;
-
-+ (NSArray*)validSahpes {
-    return @[@"◼︎", @"▲", @"●"];
-}
-
-- (void)setShape:(NSString *) shape{
-    if ([[SetCard validSahpes] containsObject:shape]){
-        _shape = shape;
-    }
-}
-
-- (NSString *)shape {
-    return  _shape ? _shape : [[SetCard validSahpes] firstObject];
-}
-
-@synthesize color = _color;
-
-+ (NSArray*)validColors {
-    return @[@"red", @"blue", @"black"];
-}
-
-- (void)setColor:(NSString *)color {
-    if ([[SetCard validColors] containsObject:color]){
-        _color = color;
-    }
-}
-
-- (NSString *)color {
-    return  _color ? _color : [[SetCard validColors] firstObject];
-}
-
-
-@synthesize shading = _shading;
-
-- (void)setShading:(NSNumber *)shading {
-    if (([shading floatValue] < 1) && ([shading floatValue] > 0)){
-        _shading = shading;
-    }
-}
-
-- (NSNumber *)shading {
-    return  _shading ? _shading : [NSNumber numberWithFloat:1];
-}
-
 
 
 + (NSArray *)validAttributeStrings {
-  return @[@"shape", @"color", @"shading"];
+  return @[@"shape", @"color", @"stripping"];
 }
 
   

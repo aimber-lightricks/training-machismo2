@@ -10,16 +10,17 @@
 #import "SetCard.h"
 
 @implementation SetCardDeck
-- (instancetype)init{
+
+- (instancetype) initWithNumberOfShapes:(NSInteger)numberOfShapes
+                     withNumberOfColors:(NSInteger)numberOfColors
+                 withNumberOfStrippings:(NSInteger)numberOfStrippings {
+
     self = [super init];
     if (self){
-        for (NSString *shape in [SetCard validSahpes]){
-          for (NSString *color in [SetCard validColors]){
-            for (NSNumber *shading in @[@0, @0.5, @1] ){
-                SetCard *card = [[SetCard alloc] init];
-                card.shape = shape;
-                card.color = color;
-              card.shading = shading;
+      for (NSInteger shape = 0; shape < numberOfShapes; shape++){
+        for (NSInteger color = 0; color < numberOfColors; color++){
+          for (NSInteger stripping = 0; stripping < numberOfStrippings; stripping++){
+                SetCard *card = [[SetCard alloc] initWithShape:shape withColor:color withStripping:stripping];
                 [self addCard:card];
             }
           }
