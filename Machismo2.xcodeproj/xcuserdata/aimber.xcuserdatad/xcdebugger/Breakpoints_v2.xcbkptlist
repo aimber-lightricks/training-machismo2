@@ -14,8 +14,8 @@
             filePath = "Machismo2/PlayingCardUI/PlayingCardView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "-drawRect:"
             landmarkType = "7">
          </BreakpointContent>

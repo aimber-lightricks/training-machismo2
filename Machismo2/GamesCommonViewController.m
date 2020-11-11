@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.playingCardView.rank = 13;
+  self.playingCardView.rank = 2;
   self.playingCardView.suit = @"♥️";
   self.playingCardView.faceUp = YES;
   // Do any additional setup after loading the view.
