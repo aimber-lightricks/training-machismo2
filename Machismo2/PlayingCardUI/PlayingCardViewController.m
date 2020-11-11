@@ -6,15 +6,21 @@
 //
 
 #import "PlayingCardViewController.h"
+#import "PlayingCardView.h"
 
 @interface PlayingCardViewController ()
+@property (weak, nonatomic) IBOutlet PlayingCardView *playingCardView;
 
 @end
 
 @implementation PlayingCardViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  self.playingCardView.rank = 2;
+  self.playingCardView.suit = @"♥️";
+  self.playingCardView.faceUp = YES;
+
     // Do any additional setup after loading the view.
 }
 
