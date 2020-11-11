@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SetCard : Card
 
 
-- (instancetype) initWithShape:(NSInteger)shape
-                     withColor:(NSInteger)color
-                 withStripping:(NSInteger)stripping;
+- (instancetype) initWithShape:(NSUInteger)shape
+                     withColor:(NSUInteger)color
+                 withStripping:(NSUInteger)stripping;
 
 
-@property (nonatomic, readonly) NSInteger shape;
-@property (nonatomic, readonly) NSInteger color;
-@property (nonatomic, readonly) NSInteger stripping;
+@property (nonatomic, readonly) NSUInteger shape;
+@property (nonatomic, readonly) NSUInteger color;
+@property (nonatomic, readonly) NSUInteger stripping;
 
 @end
 

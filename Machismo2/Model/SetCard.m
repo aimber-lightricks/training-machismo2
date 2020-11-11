@@ -9,17 +9,17 @@
 static const int kSetScore = 1;
 
 @interface SetCard ()
-@property (nonatomic, readwrite) NSInteger shape;
-@property (nonatomic, readwrite) NSInteger color;
-@property (nonatomic, readwrite) NSInteger stripping;
+@property (nonatomic, readwrite) NSUInteger shape;
+@property (nonatomic, readwrite) NSUInteger color;
+@property (nonatomic, readwrite) NSUInteger stripping;
 
 @end
 
 @implementation SetCard
 
-- (instancetype) initWithShape:(NSInteger)shape
-                     withColor:(NSInteger)color
-                 withStripping:(NSInteger)stripping {
+- (instancetype) initWithShape:(NSUInteger)shape
+                     withColor:(NSUInteger)color
+                 withStripping:(NSUInteger)stripping {
   if (self = [super init]){
     self.color = color;
     self.shape = shape;
