@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D30A2A58255AE16100942489 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A57255AE16100942489 /* PlayingCardView.m */; };
-		D30A2A64255C3D4400942489 /* SetGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A63255C3D4400942489 /* SetGameViewController.m */; };
+		D30A2A73255C402500942489 /* SetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A72255C402500942489 /* SetCardView.m */; };
+		D30A2A79255D1BD500942489 /* SetShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A78255D1BD500942489 /* SetShape.m */; };
+		D30A2A7F255D24D100942489 /* OvalShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A7E255D24D100942489 /* OvalShape.m */; };
+		D30A2A9D255D2B3D00942489 /* GamesCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2A9C255D2B3D00942489 /* GamesCommonViewController.m */; };
+		D30A2AA3255D2B7D00942489 /* SetGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2AA2255D2B7D00942489 /* SetGameViewController.m */; };
+		D30A2AA9255D444100942489 /* DimondShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2AA8255D444100942489 /* DimondShape.m */; };
+		D30A2AAF255D447F00942489 /* SquiggleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2AAE255D447F00942489 /* SquiggleShape.m */; };
+		D30A2AB5255D4F4100942489 /* CommonCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D30A2AB4255D4F4100942489 /* CommonCardView.m */; };
 		D32E2D66255A86FF0089BAA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D65255A86FF0089BAA7 /* AppDelegate.m */; };
 		D32E2D69255A86FF0089BAA7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D68255A86FF0089BAA7 /* SceneDelegate.m */; };
-		D32E2D6C255A86FF0089BAA7 /* GamesCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */; };
 		D32E2D6F255A86FF0089BAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D6D255A86FF0089BAA7 /* Main.storyboard */; };
 		D32E2D71255A87010089BAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D70255A87010089BAA7 /* Assets.xcassets */; };
 		D32E2D74255A87010089BAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E2D72255A87010089BAA7 /* LaunchScreen.storyboard */; };
@@ -49,15 +55,27 @@
 /* Begin PBXFileReference section */
 		D30A2A56255AE16100942489 /* PlayingCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
 		D30A2A57255AE16100942489 /* PlayingCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
-		D30A2A62255C3D4400942489 /* SetGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetGameViewController.h; sourceTree = "<group>"; };
-		D30A2A63255C3D4400942489 /* SetGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetGameViewController.m; sourceTree = "<group>"; };
+		D30A2A71255C402500942489 /* SetCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCardView.h; sourceTree = "<group>"; };
+		D30A2A72255C402500942489 /* SetCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetCardView.m; sourceTree = "<group>"; };
+		D30A2A77255D1BD500942489 /* SetShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetShape.h; sourceTree = "<group>"; };
+		D30A2A78255D1BD500942489 /* SetShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetShape.m; sourceTree = "<group>"; };
+		D30A2A7D255D24D100942489 /* OvalShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvalShape.h; sourceTree = "<group>"; };
+		D30A2A7E255D24D100942489 /* OvalShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OvalShape.m; sourceTree = "<group>"; };
+		D30A2A9B255D2B3D00942489 /* GamesCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GamesCommonViewController.h; path = Machismo2/SetGameUI/GamesCommonViewController.h; sourceTree = SOURCE_ROOT; };
+		D30A2A9C255D2B3D00942489 /* GamesCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GamesCommonViewController.m; path = Machismo2/SetGameUI/GamesCommonViewController.m; sourceTree = SOURCE_ROOT; };
+		D30A2AA1255D2B7D00942489 /* SetGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SetGameViewController.h; path = Machismo2/GamesCommonUI/SetGameViewController.h; sourceTree = SOURCE_ROOT; };
+		D30A2AA2255D2B7D00942489 /* SetGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SetGameViewController.m; path = Machismo2/GamesCommonUI/SetGameViewController.m; sourceTree = SOURCE_ROOT; };
+		D30A2AA7255D444100942489 /* DimondShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimondShape.h; sourceTree = "<group>"; };
+		D30A2AA8255D444100942489 /* DimondShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimondShape.m; sourceTree = "<group>"; };
+		D30A2AAD255D447F00942489 /* SquiggleShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquiggleShape.h; sourceTree = "<group>"; };
+		D30A2AAE255D447F00942489 /* SquiggleShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquiggleShape.m; sourceTree = "<group>"; };
+		D30A2AB3255D4F4100942489 /* CommonCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonCardView.h; path = Machismo2/PlayingCardUI/CommonCardView.h; sourceTree = SOURCE_ROOT; };
+		D30A2AB4255D4F4100942489 /* CommonCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CommonCardView.m; path = Machismo2/PlayingCardUI/CommonCardView.m; sourceTree = SOURCE_ROOT; };
 		D32E2D61255A86FF0089BAA7 /* Machismo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Machismo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32E2D64255A86FF0089BAA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D32E2D65255A86FF0089BAA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D32E2D67255A86FF0089BAA7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D32E2D68255A86FF0089BAA7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D32E2D6A255A86FF0089BAA7 /* GamesCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamesCommonViewController.h; sourceTree = "<group>"; };
-		D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamesCommonViewController.m; sourceTree = "<group>"; };
 		D32E2D6E255A86FF0089BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D32E2D70255A87010089BAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32E2D73255A87010089BAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,8 +146,18 @@
 		D30A2A68255C3D6300942489 /* SetGameUI */ = {
 			isa = PBXGroup;
 			children = (
-				D30A2A62255C3D4400942489 /* SetGameViewController.h */,
-				D30A2A63255C3D4400942489 /* SetGameViewController.m */,
+				D30A2AA1255D2B7D00942489 /* SetGameViewController.h */,
+				D30A2AA2255D2B7D00942489 /* SetGameViewController.m */,
+				D30A2A71255C402500942489 /* SetCardView.h */,
+				D30A2A72255C402500942489 /* SetCardView.m */,
+				D30A2AAD255D447F00942489 /* SquiggleShape.h */,
+				D30A2AAE255D447F00942489 /* SquiggleShape.m */,
+				D30A2AA7255D444100942489 /* DimondShape.h */,
+				D30A2AA8255D444100942489 /* DimondShape.m */,
+				D30A2A77255D1BD500942489 /* SetShape.h */,
+				D30A2A78255D1BD500942489 /* SetShape.m */,
+				D30A2A7D255D24D100942489 /* OvalShape.h */,
+				D30A2A7E255D24D100942489 /* OvalShape.m */,
 			);
 			path = SetGameUI;
 			sourceTree = "<group>";
@@ -150,10 +178,12 @@
 		D30A2A6A255C3DDF00942489 /* GamesCommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				D30A2AB3255D4F4100942489 /* CommonCardView.h */,
+				D30A2AB4255D4F4100942489 /* CommonCardView.m */,
+				D30A2A9B255D2B3D00942489 /* GamesCommonViewController.h */,
+				D30A2A9C255D2B3D00942489 /* GamesCommonViewController.m */,
 				D32E2DD4255ADD0D0089BAA7 /* CardsView.h */,
 				D32E2DD5255ADD0D0089BAA7 /* CardsView.m */,
-				D32E2D6A255A86FF0089BAA7 /* GamesCommonViewController.h */,
-				D32E2D6B255A86FF0089BAA7 /* GamesCommonViewController.m */,
 			);
 			path = GamesCommonUI;
 			sourceTree = "<group>";
@@ -362,20 +392,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32E2DC5255AA5EC0089BAA7 /* Deck.m in Sources */,
+				D30A2AA9255D444100942489 /* DimondShape.m in Sources */,
 				D32E2DC1255AA5EC0089BAA7 /* CardMatchingGame.m in Sources */,
-				D32E2D6C255A86FF0089BAA7 /* GamesCommonViewController.m in Sources */,
+				D30A2A7F255D24D100942489 /* OvalShape.m in Sources */,
+				D30A2AB5255D4F4100942489 /* CommonCardView.m in Sources */,
 				D32E2D66255A86FF0089BAA7 /* AppDelegate.m in Sources */,
 				D32E2DC4255AA5EC0089BAA7 /* SetCardDeck.m in Sources */,
+				D30A2AA3255D2B7D00942489 /* SetGameViewController.m in Sources */,
 				D32E2DAB255AA5C50089BAA7 /* PlayingCardViewController.m in Sources */,
+				D30A2A79255D1BD500942489 /* SetShape.m in Sources */,
 				D32E2DC3255AA5EC0089BAA7 /* PlayngCard.m in Sources */,
 				D32E2D77255A87010089BAA7 /* main.m in Sources */,
 				D32E2D69255A86FF0089BAA7 /* SceneDelegate.m in Sources */,
+				D30A2A73255C402500942489 /* SetCardView.m in Sources */,
 				D32E2DC6255AA5EC0089BAA7 /* Card.m in Sources */,
 				D32E2DD6255ADD0D0089BAA7 /* CardsView.m in Sources */,
 				D30A2A58255AE16100942489 /* PlayingCardView.m in Sources */,
+				D30A2AAF255D447F00942489 /* SquiggleShape.m in Sources */,
+				D30A2A9D255D2B3D00942489 /* GamesCommonViewController.m in Sources */,
 				D32E2DC2255AA5EC0089BAA7 /* SetCard.m in Sources */,
 				D32E2DC7255AA5EC0089BAA7 /* PlayngCardDeck.m in Sources */,
-				D30A2A64255C3D4400942489 /* SetGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
