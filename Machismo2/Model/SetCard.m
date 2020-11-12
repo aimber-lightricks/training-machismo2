@@ -12,18 +12,19 @@ static const int kSetScore = 1;
 @property (nonatomic, readwrite) NSUInteger shape;
 @property (nonatomic, readwrite) NSUInteger color;
 @property (nonatomic, readwrite) NSUInteger stripping;
-
+@property (nonatomic, readwrite) NSUInteger numberOfShapes;
 @end
 
 @implementation SetCard
 
 - (instancetype) initWithShape:(NSUInteger)shape
                      withColor:(NSUInteger)color
-                 withStripping:(NSUInteger)stripping {
+                 withStripping:(NSUInteger)stripping withNumberOfShapes:(NSUInteger)numberOFshapes{
   if (self = [super init]){
     self.color = color;
     self.shape = shape;
     self.stripping = stripping;
+    self.numberOfShapes = numberOFshapes;
   }
   return self;
 }
@@ -68,7 +69,7 @@ static const int kSetScore = 1;
 
 
 + (NSArray *)validAttributeStrings {
-  return @[@"shape", @"color", @"stripping"];
+  return @[@"shape", @"color", @"stripping", @"numberOfShapes"];
 }
 
   

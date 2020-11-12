@@ -14,12 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype) initWithShape:(NSUInteger)shape
                      withColor:(NSUInteger)color
-                 withStripping:(NSUInteger)stripping;
+                 withStripping:(NSUInteger)stripping
+            withNumberOfShapes:(NSUInteger)numberOFshapes;
 
 
 @property (nonatomic, readonly) NSUInteger shape;
 @property (nonatomic, readonly) NSUInteger color;
 @property (nonatomic, readonly) NSUInteger stripping;
+@property (nonatomic, readonly) NSUInteger numberOfShapes;
+
 
 @end
 

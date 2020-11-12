@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SetCardDeck : Deck
 - (instancetype) initWithNumberOfShapes:(NSInteger)numberOfShapes
                      withNumberOfColors:(NSInteger)numberOfColors
-                 withNumberOfStrippings:(NSInteger)numberOfStrippings;
+                 withNumberOfStrippings:(NSInteger)numberOfStrippings
+                  withMaxNumberOfShapes:(NSUInteger) maxNumberOfShapes;
 
 @end
 
