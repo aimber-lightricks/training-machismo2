@@ -9,8 +9,6 @@
 
 #import "PlayngCard.h"
 
-#define CORNER_FONT_STANDARD_HEIGHT 180.0
-#define  CORNER_RADIUS 12.0
 #define DEFAULT_FACE_CARD_SCALE_FACTOR 0.90
 #define PIP_FONT_SCALE_FACTOR 0.012
 #define PIP_HOFFSET_PECENTAGE 0.165
@@ -61,13 +59,8 @@
 
 
 #pragma mark - Drawing
-- (CGFloat)cornerScaleFactor {
-  return self.bounds.size.height / CORNER_FONT_STANDARD_HEIGHT;
-}
 
-- (CGFloat)cornerRadius {
-  return CORNER_RADIUS * [self cornerScaleFactor];
-}
+
 
 - (CGFloat)cornerOffset {
   return [self cornerRadius] / 3.0;
@@ -76,15 +69,7 @@
 
 - (void)drawRect:(CGRect)rect {
 
-  UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:[self cornerRadius]];
-  
-  [roundedRect addClip];
-  
-  [[UIColor whiteColor] setFill];
-  UIRectFill(self.bounds);
-  
-  [[UIColor blackColor] setStroke];
-  [roundedRect stroke];
+  [super drawRect:rect];
   
   if (self.faceUp) {
     UIImage * faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", [self rankAsString], self.suit]];
@@ -235,19 +220,7 @@
 
 
 
-#pragma mark - Initialization
-- (void)setup {
-  
-  self.backgroundColor = nil;
-  self.opaque = NO;
-  self.contentMode = UIViewContentModeRedraw;
-  [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
-}
 
-- (void)awakeFromNib {
-  [super awakeFromNib];
-  [self setup];
-}
 
 
 @end
