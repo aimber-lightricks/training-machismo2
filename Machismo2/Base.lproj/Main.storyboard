@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6UQ-7f-bjf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4tY-Ja-YTb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="wpk-5p-q6R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4f-3B-fDk" customClass="CardsView">
+                                <rect key="frame" x="51" y="66" width="312" height="391"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pVi-XJ-ig1"/>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pVi-XJ-ig1" firstAttribute="bottom" secondItem="B4f-3B-fDk" secondAttribute="bottom" constant="356" id="abc-2E-o3g"/>
+                            <constraint firstItem="B4f-3B-fDk" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="51" id="dSL-M0-5FG"/>
+                            <constraint firstItem="B4f-3B-fDk" firstAttribute="top" secondItem="pVi-XJ-ig1" secondAttribute="top" constant="22" id="tst-9P-JXN"/>
+                            <constraint firstItem="B4f-3B-fDk" firstAttribute="centerX" secondItem="wpk-5p-q6R" secondAttribute="centerX" id="w53-0F-55W"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Game" id="QIN-Aw-Nls"/>
+                    <connections>
+                        <outlet property="cardsView" destination="B4f-3B-fDk" id="HEd-yQ-flm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrW-ji-uAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,39 +65,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ms3-OZ-FuM" customClass="CardsView">
-                                <rect key="frame" x="38" y="90" width="333" height="405"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Llg-39-IqI" customClass="PlayingCardView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Llg-39-IqI" customClass="PlayingCardView">
                                 <rect key="frame" x="140" y="567" width="89" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Naf-ZP-2HU" appends="YES" id="ozb-rg-ax2"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXh-FY-28y" customClass="CardsView">
+                                <rect key="frame" x="49" y="62" width="316" height="391"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ms3-OZ-FuM" secondAttribute="trailing" constant="43" id="Xbl-Bj-JxT"/>
-                            <constraint firstItem="ms3-OZ-FuM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="kBe-hh-ZYp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ms3-OZ-FuM" secondAttribute="bottom" constant="318" id="p1b-lR-zVs"/>
-                            <constraint firstItem="ms3-OZ-FuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="xE0-c0-lS6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Llg-39-IqI" secondAttribute="bottom" constant="122" id="33k-eM-xYH"/>
+                            <constraint firstItem="cXh-FY-28y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sM-wr-Rlr"/>
+                            <constraint firstItem="Llg-39-IqI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="567" id="7QC-dK-gyv"/>
+                            <constraint firstItem="Llg-39-IqI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="G1A-eQ-SY4"/>
+                            <constraint firstAttribute="bottom" secondItem="cXh-FY-28y" secondAttribute="bottom" constant="443" id="eFs-pr-Jge"/>
+                            <constraint firstItem="cXh-FY-28y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="eTr-No-j6c"/>
+                            <constraint firstItem="cXh-FY-28y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="hmX-Qs-Jmn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Llg-39-IqI" secondAttribute="trailing" constant="185" id="mmX-VW-mqr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Matching Game" id="Gkx-Yx-skB"/>
                     <navigationItem key="navigationItem" id="UXP-Hh-EAO"/>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="cardsView" destination="cXh-FY-28y" id="ESd-u8-VjZ"/>
                         <outlet property="playingCardView" destination="Llg-39-IqI" id="AjA-Tb-FY3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Naf-ZP-2HU"/>
             </objects>
-            <point key="canvasLocation" x="412" y="-257"/>
+            <point key="canvasLocation" x="411.59420289855075" y="-257.14285714285711"/>
         </scene>
     </scenes>
     <resources>

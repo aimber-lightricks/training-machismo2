@@ -22,6 +22,7 @@
   
   
   
+  
 //                      CGRectMake(self.view.bounds.size.width / 8, self.view.bounds.size.height / 8, self.view.bounds.size.width  * 0.4, self.view.bounds.size.width * 0.4 * 1.57)];
   self.setCardView.cardColor = RED;
   self.setCardView.cardShape = DIMOND;
