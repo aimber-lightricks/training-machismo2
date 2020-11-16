@@ -32,7 +32,6 @@
 		D32E2DC5255AA5EC0089BAA7 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DBB255AA5EC0089BAA7 /* Deck.m */; };
 		D32E2DC6255AA5EC0089BAA7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DBD255AA5EC0089BAA7 /* Card.m */; };
 		D32E2DC7255AA5EC0089BAA7 /* PlayngCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */; };
-		D32E2DD6255ADD0D0089BAA7 /* CardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2DD5255ADD0D0089BAA7 /* CardsView.m */; };
 		D34360DE256142DD0066209D /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = D34360DD256142DD0066209D /* Grid.m */; };
 /* End PBXBuildFile section */
 
@@ -104,8 +103,6 @@
 		D32E2DBE255AA5EC0089BAA7 /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCard.h; sourceTree = "<group>"; };
 		D32E2DBF255AA5EC0089BAA7 /* SetCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardDeck.h; sourceTree = "<group>"; };
 		D32E2DC0255AA5EC0089BAA7 /* PlayngCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayngCardDeck.m; sourceTree = "<group>"; };
-		D32E2DD4255ADD0D0089BAA7 /* CardsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardsView.h; sourceTree = "<group>"; };
-		D32E2DD5255ADD0D0089BAA7 /* CardsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsView.m; sourceTree = "<group>"; };
 		D34360DC256142DD0066209D /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
 		D34360DD256142DD0066209D /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,8 +182,6 @@
 				D30A2AB4255D4F4100942489 /* CommonCardView.m */,
 				D30A2A9B255D2B3D00942489 /* GamesCommonViewController.h */,
 				D30A2A9C255D2B3D00942489 /* GamesCommonViewController.m */,
-				D32E2DD4255ADD0D0089BAA7 /* CardsView.h */,
-				D32E2DD5255ADD0D0089BAA7 /* CardsView.m */,
 			);
 			path = GamesCommonUI;
 			sourceTree = "<group>";
@@ -420,7 +415,6 @@
 				D34360DE256142DD0066209D /* Grid.m in Sources */,
 				D30A2A73255C402500942489 /* SetCardView.m in Sources */,
 				D32E2DC6255AA5EC0089BAA7 /* Card.m in Sources */,
-				D32E2DD6255ADD0D0089BAA7 /* CardsView.m in Sources */,
 				D30A2A58255AE16100942489 /* PlayingCardView.m in Sources */,
 				D30A2AAF255D447F00942489 /* SquiggleShape.m in Sources */,
 				D30A2A9D255D2B3D00942489 /* GamesCommonViewController.m in Sources */,
@@ -606,7 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -624,7 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lightricks.Machismo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
