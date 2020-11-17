@@ -7,39 +7,73 @@
 
 #import "SetGameViewController.h"
 
+#import "SetCard.h"
+#import "SetCardDeck.h"
+#import "SetCardView.h"
+
+#define NUMBER_OF_CARDS_TO_MATCH 3
+#define NUMBER_OF_CARDS_IN_A_SET_GAME 12
+
+#define NUMBER_OF_SHAPES_TYPES 3
+#define NUMBER_OF_COLORS 3
+#define NUMBER_OF_STRIPPINGS 3
+#define MAX_NUMBER_OF_SHAPES 3
+#define CARDS_TO_ADD 3
+
 @interface SetGameViewController ()
 
 @end
 
 @implementation SetGameViewController
 
+- (NSInteger)numberOfMatchesMode {
+  return NUMBER_OF_CARDS_TO_MATCH;
+}
+
+- (NSInteger)numberOfCardsInGame {
+return NUMBER_OF_CARDS_IN_A_SET_GAME;
+}
+
+- (NSInteger)numberOfCardsToAdd {
+  return CARDS_TO_ADD;
+}
+
+- (Deck *)createDeck {
+  return [[SetCardDeck alloc] initWithNumberOfShapes:NUMBER_OF_SHAPES_TYPES
+                                  withNumberOfColors:NUMBER_OF_COLORS
+                              withNumberOfStrippings:NUMBER_OF_STRIPPINGS
+                               withMaxNumberOfShapes:MAX_NUMBER_OF_SHAPES];
+}
+
+- (CommonCardView *)getNewCardView:(CGRect)rect forCard:(Card*)card {
+  SetCardView * setCardView = [[SetCardView alloc] initWithFrame:rect];
+  SetCard *setCard = (SetCard*)card;
+  
+  setCardView.cardColor = setCard.color;
+  setCardView.cardShape = setCard.shape;
+  setCardView.cardFillPattern = setCard.stripping;
+  setCardView.numberOfShapes = setCard.numberOfShapes;
+  
+  return setCardView;
+  
+}
+
+- (void)animateCardViewRemove:(CommonCardView *)cardView {
+  [UIView animateWithDuration:3.0
+                   animations:^{
+    int x = (arc4random()%(int)(self.view.bounds.size.width * 5 )) - (int)self.view.bounds.size.width * 2;
+    int y = self.view.bounds.size.height;
+    cardView.center = CGPointMake(x, y);
+    
+  } completion:^(BOOL finished) {
+    [cardView removeFromSuperview];
+  }
+   ];
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  self.setCardView = [[SetCardView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 8, self.view.bounds.size.height / 8, self.view.bounds.size.width  * 0.4, self.view.bounds.size.width * 0.4 * 1.57)];
-  [self.view addSubview:self.setCardView];
-  
-  
-  
-  
-  
-//                      CGRectMake(self.view.bounds.size.width / 8, self.view.bounds.size.height / 8, self.view.bounds.size.width  * 0.4, self.view.bounds.size.width * 0.4 * 1.57)];
-  self.setCardView.cardColor = RED;
-  self.setCardView.cardShape = DIMOND;
-  self.setCardView.cardFillPattern = SOLID;
-  self.setCardView.numberOfShapes = THREE;
-  
-    // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

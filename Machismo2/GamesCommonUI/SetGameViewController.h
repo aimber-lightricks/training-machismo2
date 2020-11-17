@@ -12,7 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SetGameViewController : GamesCommonViewController
-@property (strong, nonatomic) IBOutlet SetCardView *setCardView;
 
 
 @end
