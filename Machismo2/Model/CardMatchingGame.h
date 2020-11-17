@@ -34,11 +34,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithCardCount:(NSUInteger) count usingDeck:(Deck *) deck matchingNumberOfCards:(NSInteger) numOfCardsToMatch;
 
 - (struct MoveResult)chooseCardAtIndex:(NSUInteger) index;
-- (Card *) cardAtIndex:(NSUInteger) index;
+- (Card *)cardAtIndex:(NSUInteger) index;
+- (NSUInteger)addCardsFromDeck:(NSUInteger) numberOfCards;
+
 
 @property (nonatomic) NSInteger numberOfCardsToMatch;
 @property (readonly, nonatomic) NSInteger score;
 @property (readonly, nonatomic) NSString *lastMoveScoreDetails;
+@property (readonly, nonatomic) NSUInteger numberOfCards;
 
 @end
 

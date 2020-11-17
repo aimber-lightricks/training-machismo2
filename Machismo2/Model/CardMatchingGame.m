@@ -15,53 +15,59 @@ static const int kCostToChoose = 1;
 @interface CardMatchingGame()
 @property (readwrite, nonatomic) NSInteger score;
 @property (strong, nonatomic) NSMutableArray *cards; //of Card
+@property (strong,nonatomic) Deck *deck;
 @end
 
 @implementation CardMatchingGame
 
+- (NSUInteger)numberOfCards {
+  return [self.cards count];
+}
+
 - (void)setNumberOfCardsToMatch:(NSInteger)numberOfCardsToMatch {
-    BOOL cleanCards = YES;
-    for (Card *card in self.cards)
-        if (card.isChosen || card.isMatched){
-            cleanCards = NO;
-            break;
-        }
-    if (cleanCards){
-        _numberOfCardsToMatch = numberOfCardsToMatch;
+  BOOL cleanCards = YES;
+  for (Card *card in self.cards)
+    if (card.isChosen || card.isMatched){
+      cleanCards = NO;
+      break;
     }
+  if (cleanCards){
+    _numberOfCardsToMatch = numberOfCardsToMatch;
+  }
 }
 
 - (NSArray *)cards{
-    if (!_cards) _cards = [[NSMutableArray alloc] init];
-    return _cards;
+  if (!_cards) _cards = [[NSMutableArray alloc] init];
+  return _cards;
 }
 
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck {
-    self = [super init];
-    if (self){
-        for (NSInteger i=0; i < count; i++){
-            Card *card = [deck drawRandomCard];
-            if (card){
-                [self.cards addObject:card];
-            } else {
-                self = nil;
-                break;
-            }
-        }
+  self = [super init];
+  self.deck = deck;
+  if (self){
+    for (NSInteger i = 0; i < count; i++){
+      Card *card = [deck drawRandomCard];
+      if (card){
+        [self.cards addObject:card];
+      } else {
+        self = nil;
+        break;
+      }
     }
-    
-    return self;
+  }
+  
+  return self;
 }
 
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck matchingNumberOfCards:(NSInteger)numOfCardsToMatch {
-    self = [self initWithCardCount:count usingDeck:deck];
-    if (self) self.numberOfCardsToMatch = numOfCardsToMatch;
-    return self;
-    
+  self = [self initWithCardCount:count usingDeck:deck];
+  if (self) self.numberOfCardsToMatch = numOfCardsToMatch;
+  return self;
+  
 }
 
 - (Card *)cardAtIndex:(NSUInteger)index {
-    return index < [self.cards count] ? self.cards[index] : nil;
+  return index < [self.cards count] ? self.cards[index] : nil;
 }
 
 - (struct MoveResult)chooseCardAtIndex:(NSUInteger)index {
@@ -70,7 +76,7 @@ static const int kCostToChoose = 1;
   moveResult.moveOutcome = NoMatchingRequired;
   moveResult.moveScore = 0;
   moveResult.movePenalty = 0;
-
+  
   Card *card = [self cardAtIndex:index];
   moveResult.moveCards = @[card];
   if (!card.isMatched){
@@ -131,5 +137,17 @@ static const int kCostToChoose = 1;
   return moveResult;
 }
 
+- (NSUInteger)addCardsFromDeck:(NSUInteger)numberOfCards {
+  NSUInteger numberOfAddedCards = 0;
+  for (numberOfAddedCards = 0; numberOfAddedCards < numberOfCards; numberOfAddedCards++) {
+      Card *card = [self.deck drawRandomCard];
+      if (card) {
+        [self.cards addObject:card];
+      } else {
+        break;
+      }
+  }
+  return numberOfAddedCards;
+}
 
 @end
