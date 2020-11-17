@@ -122,7 +122,6 @@
 }
 
 
-
 @synthesize selected = _selected;
 - (void)setSelected:(BOOL)selected {
   _selected = selected;
@@ -134,19 +133,27 @@
   
 }
 
-
-- (void)tap:(UITapGestureRecognizer *)gesture {
-  
+- (void)tapAnimationWithCompletion:(void (^)(BOOL))completion {
   [UIView animateWithDuration:1.0
-                   animations:^{self.selected = !self.selected;}];
-}
+                   animations:^{self.selected = !self.selected;}
+                   completion:completion];
 
+}
 
 - (void)setup {
   [super setup];
   self.selected = NO;
 }
 
-
+- (BOOL)isEqual:(id)object {
+  if (![object isKindOfClass:[self class]]) {
+    return NO;
+  }
+  SetCardView *otherSetCardView = (SetCardView *)object;
+  return (self.cardColor == otherSetCardView.cardColor) &&
+  (self.cardShape == otherSetCardView.cardShape) &&
+  (self.cardFillPattern == otherSetCardView.cardFillPattern) &&
+  (self.numberOfShapes == otherSetCardView.numberOfShapes);
+}
 
 @end

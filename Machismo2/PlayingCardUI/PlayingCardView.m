@@ -60,8 +60,6 @@
 
 #pragma mark - Drawing
 
-
-
 - (CGFloat)cornerOffset {
   return [self cornerRadius] / 3.0;
   
@@ -179,10 +177,6 @@
                        verticalOffset:PIP_VOFFSET1_PECENTAGE
                     mirroredVerticaly:YES];
   }
-
-  
-  
-  
 }
 
 
@@ -210,17 +204,20 @@
   [corrnerText drawInRect:textBounds];
 }
 
-- (void)tap:(UITapGestureRecognizer *)gesture {
-  
+- (void)tapAnimationWithCompletion:(void (^ __nullable)(BOOL finished))completion {
   [UIView transitionWithView:self duration:1.0
-                     options:UIViewAnimationOptionTransitionFlipFromLeft | UIViewAnimationOptionBeginFromCurrentState 
-                  animations:^{ self.faceUp = !self.faceUp; } completion:nil];
+                     options:UIViewAnimationOptionTransitionFlipFromLeft | UIViewAnimationOptionBeginFromCurrentState
+                  animations:^{ self.faceUp = !self.faceUp; } completion:completion];
 }
 
-
-
-
-
-
+- (BOOL)isEqual:(id)object {
+  if (![object isKindOfClass:[self class]]) {
+    return NO;
+  }
+  PlayingCardView *otherPlayingCardView = (PlayingCardView *)object;
+  return (self.rank == otherPlayingCardView.rank) &&
+  ([self.suit isEqual:otherPlayingCardView.suit]) &&
+  (self.faceUp = otherPlayingCardView.faceUp);
+}
 
 @end

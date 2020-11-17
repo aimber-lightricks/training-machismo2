@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGFloat)cornerRadius;
 - (CGFloat)cornerScaleFactor;
 - (void)setup;
-- (void)tap:(UITapGestureRecognizer *)gesture; //abstract
+- (void)tapAnimationWithCompletion:(void (^ __nullable)(BOOL finished))completion; //abstract
 
 @end
 

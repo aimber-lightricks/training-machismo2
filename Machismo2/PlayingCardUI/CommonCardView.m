@@ -31,9 +31,12 @@
   [roundedRect stroke];
 }
 
+- (void)tapAnimation {
+  
+}
 
 - (void)tap:(UITapGestureRecognizer *)gesture {
-  
+  [self tapAnimation];
 }
 
 #pragma mark - Initialization
@@ -42,7 +45,7 @@
   self.backgroundColor = nil;
   self.opaque = NO;
   self.contentMode = UIViewContentModeRedraw;
-  [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
+//  [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
 }
 
 - (void)awakeFromNib {
