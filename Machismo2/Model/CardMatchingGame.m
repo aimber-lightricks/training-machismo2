@@ -70,6 +70,7 @@ static const int kCostToChoose = 1;
   return index < [self.cards count] ? self.cards[index] : nil;
 }
 
+
 - (struct MoveResult)chooseCardAtIndex:(NSUInteger)index {
   
   struct MoveResult moveResult;
@@ -120,15 +121,17 @@ static const int kCostToChoose = 1;
           self.score -= kMissMatchPenalty;
           moveResult.moveOutcome = DidNotMatch;
           moveResult.moveScore = -kMissMatchPenalty;
-          for (Card *otherCard in otherChosenCards) {
-            otherCard.chosen = NO;
+          for (Card *unMatchedCard in allChosenCards) {
+            unMatchedCard.chosen = NO;
           }
         }
       }
     }
     self.score -= kCostToChoose;
     moveResult.movePenalty = kCostToChoose;
-    card.chosen = YES;
+    if (moveResult.moveOutcome == NoMatchingRequired) {
+      card.chosen = YES;
+    }
     
   } else {
     moveResult.moveOutcome = AlreadyMatched;
