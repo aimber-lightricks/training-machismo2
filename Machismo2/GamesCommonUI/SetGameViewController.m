@@ -53,22 +53,60 @@ return NUMBER_OF_CARDS_IN_A_SET_GAME;
   setCardView.cardShape = setCard.shape;
   setCardView.cardFillPattern = setCard.stripping;
   setCardView.numberOfShapes = setCard.numberOfShapes;
+  setCardView.alpha = 0;
   
   return setCardView;
   
 }
 
-- (void)animateCardViewRemove:(CommonCardView *)cardView {
+- (void)animateCardViewRemove:(CommonCardView *)cardView
+               withComplition:(void (^ __nullable)(BOOL finished))completion {
   [UIView animateWithDuration:3.0
                    animations:^{
     int x = (arc4random()%(int)(self.view.bounds.size.width * 5 )) - (int)self.view.bounds.size.width * 2;
     int y = self.view.bounds.size.height;
     cardView.center = CGPointMake(x, y);
     
-  } completion:^(BOOL finished) {
+  }
+                   completion:^(BOOL finished) {
     [cardView removeFromSuperview];
+    if (completion) {
+      completion(finished);
+    }
   }
    ];
+}
+
+
+
+//- (void)removeMatchedCardsViews:(NSArray *)cardsToRemove
+//                 withCompletion:(void (^ __nullable)(BOOL finished))completion {
+//  for (Card* card in cardsToRemove) {
+//    CommonCardView *cardToRemoveView = [self getNewCardView:CGRectZero forCard:card];
+//    NSUInteger cardViewIndex = 0;
+//    NSArray *cardsToRemoveCopy = [self.cardsViews copy];
+//    for (CommonCardView *cardView in cardsToRemoveCopy) {
+//      if ([cardToRemoveView isEqual:cardView]) {
+//        [self.cardsViews  replaceObjectAtIndex:cardViewIndex withObject:nil];
+//        BOOL isLastCardView = cardViewIndex == [cardsToRemoveCopy count];
+//        [self animateCardViewRemove:cardView
+//                     withComplition:isLastCardView ?
+//         ^(BOOL finished) {
+//          [self dealNewCardsWithCompletion:nil];
+//          completion(finished);
+//        }
+//                                   : nil];
+//
+//
+//      }
+//      cardViewIndex++;
+//    }
+//  }
+//  
+//}
+
+- (BOOL)drawMatchedCards {
+  return NO;
 }
 
 - (void)viewDidLoad {

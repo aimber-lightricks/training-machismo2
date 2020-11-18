@@ -31,12 +31,12 @@
   [roundedRect stroke];
 }
 
-- (void)tapAnimation {
+- (void)tapAnimationWithCompletion:(void (^)(BOOL))completion {
   
 }
 
 - (void)tap:(UITapGestureRecognizer *)gesture {
-  [self tapAnimation];
+  [self tapAnimationWithCompletion:nil];
 }
 
 #pragma mark - Initialization

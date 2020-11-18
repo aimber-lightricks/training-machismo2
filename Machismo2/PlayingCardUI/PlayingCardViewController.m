@@ -43,15 +43,21 @@ return NUMBER_OF_CARDS_IN_A_MATCHING_GAME;
   playingCardView.rank = playingCard.rank;
   playingCardView.suit = playingCard.suit;
   playingCardView.faceUp = playingCard.chosen;
+  playingCardView.alpha = 0;
   
   return playingCardView;
   
 }
 
-- (void)animateCardViewRemove:(CommonCardView *)cardView {
-  [UIView animateWithDuration:1.0 animations:^{cardView.alpha = 0.7;} completion:nil];
+- (void)animateCardViewRemove:(CommonCardView *)cardView
+               withComplition:(void (^ __nullable)(BOOL finished))completion {
+  [UIView animateWithDuration:1.0 animations:^{cardView.alpha = 0.7;} completion:completion];
 }
 
+
+- (BOOL)drawMatchedCards {
+  return YES;
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];

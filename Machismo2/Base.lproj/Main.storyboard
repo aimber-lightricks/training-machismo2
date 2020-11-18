@@ -28,11 +28,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEI-BW-jIq">
-                                <rect key="frame" x="52" y="79" width="342" height="449"/>
+                                <rect key="frame" x="36" y="20" width="338" height="373"/>
                                 <gestureRecognizers/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwE-XF-IHi">
-                                <rect key="frame" x="52" y="552" width="73" height="47"/>
+                                <rect key="frame" x="37" y="553" width="169" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="gnl-TJ-k4z"/>
                                 </constraints>
@@ -40,25 +40,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-1m-KPh" customClass="DeckView">
+                                <rect key="frame" x="113" y="422" width="77" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hjh-1m-KPh" secondAttribute="height" multiplier="7:9" id="fvC-NE-Xb6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pVi-XJ-ig1"/>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hwE-XF-IHi" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="37" id="8ng-Cn-bfq"/>
                             <constraint firstItem="pVi-XJ-ig1" firstAttribute="bottom" secondItem="v5o-LL-qcI" secondAttribute="bottom" constant="20" id="DZp-Ng-HpG"/>
-                            <constraint firstItem="hwE-XF-IHi" firstAttribute="leading" secondItem="v5o-LL-qcI" secondAttribute="leading" constant="15" id="KBp-vH-k2v"/>
-                            <constraint firstItem="vEI-BW-jIq" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="52" id="KPe-CS-nWp"/>
-                            <constraint firstItem="vEI-BW-jIq" firstAttribute="centerX" secondItem="wpk-5p-q6R" secondAttribute="centerX" constant="16" id="XoD-ER-haq"/>
-                            <constraint firstItem="hwE-XF-IHi" firstAttribute="top" secondItem="vEI-BW-jIq" secondAttribute="bottom" constant="24" id="ZlJ-P7-dOl"/>
+                            <constraint firstItem="hwE-XF-IHi" firstAttribute="leading" secondItem="v5o-LL-qcI" secondAttribute="leading" id="KBp-vH-k2v"/>
+                            <constraint firstItem="vEI-BW-jIq" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="36" id="KPe-CS-nWp"/>
+                            <constraint firstItem="hwE-XF-IHi" firstAttribute="top" secondItem="hjh-1m-KPh" secondAttribute="bottom" constant="32" id="Nei-dn-05S"/>
+                            <constraint firstItem="hjh-1m-KPh" firstAttribute="top" secondItem="wpk-5p-q6R" secondAttribute="top" constant="422" id="Veg-f8-U4L"/>
+                            <constraint firstItem="vEI-BW-jIq" firstAttribute="centerX" secondItem="wpk-5p-q6R" secondAttribute="centerX" constant="-2" id="XoD-ER-haq"/>
                             <constraint firstItem="v5o-LL-qcI" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="37" id="fiJ-ca-sP1"/>
-                            <constraint firstItem="pVi-XJ-ig1" firstAttribute="trailing" secondItem="hwE-XF-IHi" secondAttribute="trailing" constant="810" id="iWu-7O-TbB"/>
-                            <constraint firstItem="vEI-BW-jIq" firstAttribute="top" secondItem="pVi-XJ-ig1" secondAttribute="top" constant="79" id="rYE-sS-qr0"/>
-                            <constraint firstItem="v5o-LL-qcI" firstAttribute="top" secondItem="hwE-XF-IHi" secondAttribute="bottom" constant="29" id="zHa-U8-Vp3"/>
+                            <constraint firstItem="pVi-XJ-ig1" firstAttribute="trailing" secondItem="hwE-XF-IHi" secondAttribute="trailing" constant="208" id="iWu-7O-TbB"/>
+                            <constraint firstItem="hjh-1m-KPh" firstAttribute="top" secondItem="vEI-BW-jIq" secondAttribute="bottom" constant="29" id="ohh-sr-G2s"/>
+                            <constraint firstItem="vEI-BW-jIq" firstAttribute="top" secondItem="pVi-XJ-ig1" secondAttribute="top" constant="20" id="rYE-sS-qr0"/>
+                            <constraint firstItem="hjh-1m-KPh" firstAttribute="leading" secondItem="pVi-XJ-ig1" secondAttribute="leading" constant="113" id="yUN-kS-aom"/>
+                            <constraint firstItem="v5o-LL-qcI" firstAttribute="top" secondItem="hwE-XF-IHi" secondAttribute="bottom" constant="28" id="zHa-U8-Vp3"/>
                             <constraint firstItem="pVi-XJ-ig1" firstAttribute="trailing" secondItem="v5o-LL-qcI" secondAttribute="trailing" constant="148" id="zfA-mJ-CKG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Game" id="QIN-Aw-Nls"/>
                     <connections>
                         <outlet property="cardsView" destination="vEI-BW-jIq" id="u0u-ho-w9r"/>
+                        <outlet property="deckView" destination="hjh-1m-KPh" id="J2v-yO-jYx"/>
                         <outlet property="scoreLable" destination="hwE-XF-IHi" id="43M-Q0-4cg"/>
                     </connections>
                 </viewController>
@@ -108,10 +119,6 @@
                                     <action selector="restartGameButton:" destination="a5u-wE-hcb" eventType="touchUpInside" id="OKk-DB-0v1"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPA-OV-HXS">
-                                <rect key="frame" x="37" y="20" width="341" height="450"/>
-                                <gestureRecognizers/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TH-Xn-vA4">
                                 <rect key="frame" x="37" y="560" width="162" height="47"/>
                                 <constraints>
@@ -121,26 +128,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPA-OV-HXS">
+                                <rect key="frame" x="37" y="20" width="341" height="375"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-KB-1rz" customClass="DeckView">
+                                <rect key="frame" x="80" y="427" width="77" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MEG-KB-1rz" secondAttribute="height" multiplier="7:9" id="GtD-nD-MCV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="53o-eT-zgp"/>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MEG-KB-1rz" firstAttribute="top" secondItem="rPA-OV-HXS" secondAttribute="bottom" constant="32" id="3sh-MM-HfL"/>
                             <constraint firstItem="rPA-OV-HXS" firstAttribute="leading" secondItem="53o-eT-zgp" secondAttribute="leading" constant="37" id="84o-vu-eUh"/>
                             <constraint firstItem="H9o-aj-V3P" firstAttribute="leading" secondItem="53o-eT-zgp" secondAttribute="leading" constant="37" id="A50-mo-hmN"/>
+                            <constraint firstItem="MEG-KB-1rz" firstAttribute="leading" secondItem="53o-eT-zgp" secondAttribute="leading" constant="80" id="GG8-1b-dOo"/>
                             <constraint firstItem="53o-eT-zgp" firstAttribute="trailing" secondItem="H9o-aj-V3P" secondAttribute="trailing" constant="148" id="L6y-aG-Adh"/>
                             <constraint firstItem="53o-eT-zgp" firstAttribute="trailing" secondItem="rPA-OV-HXS" secondAttribute="trailing" constant="36" id="U2u-9G-88d"/>
+                            <constraint firstItem="0TH-Xn-vA4" firstAttribute="top" secondItem="MEG-KB-1rz" secondAttribute="bottom" constant="34" id="bln-w1-tKU"/>
                             <constraint firstItem="rPA-OV-HXS" firstAttribute="top" secondItem="53o-eT-zgp" secondAttribute="top" constant="20" id="cfM-NU-uyo"/>
                             <constraint firstItem="53o-eT-zgp" firstAttribute="trailing" secondItem="0TH-Xn-vA4" secondAttribute="trailing" constant="215" id="fQh-GY-qRo"/>
                             <constraint firstItem="H9o-aj-V3P" firstAttribute="top" secondItem="0TH-Xn-vA4" secondAttribute="bottom" constant="21" id="hg0-4b-QNP"/>
                             <constraint firstItem="53o-eT-zgp" firstAttribute="bottom" secondItem="H9o-aj-V3P" secondAttribute="bottom" constant="20" id="jly-Yg-Xz0"/>
-                            <constraint firstItem="0TH-Xn-vA4" firstAttribute="top" secondItem="rPA-OV-HXS" secondAttribute="bottom" constant="90" id="kHB-eN-x1p"/>
                             <constraint firstItem="0TH-Xn-vA4" firstAttribute="leading" secondItem="53o-eT-zgp" secondAttribute="leading" constant="37" id="kQL-FY-lcD"/>
                             <constraint firstItem="53o-eT-zgp" firstAttribute="trailing" secondItem="0TH-Xn-vA4" secondAttribute="trailing" constant="215" id="wPZ-FQ-vHH"/>
+                            <constraint firstItem="MEG-KB-1rz" firstAttribute="top" secondItem="PLG-Oa-BgR" secondAttribute="top" constant="427" id="z5h-aX-kif"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Matching Game" id="rBK-dj-17D"/>
                     <connections>
                         <outlet property="cardsView" destination="rPA-OV-HXS" id="bzY-oG-3Ce"/>
+                        <outlet property="deckView" destination="MEG-KB-1rz" id="eKj-Dq-8i6"/>
                         <outlet property="scoreLable" destination="0TH-Xn-vA4" id="4yz-fD-07s"/>
                     </connections>
                 </viewController>
