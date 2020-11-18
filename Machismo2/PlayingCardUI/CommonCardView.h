@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CommonCardView : UIView
 
+@property (nonatomic) BOOL matched;
+
 - (void)awakeFromNib;
 - (instancetype)initWithFrame:(CGRect)frame;
 - (CGFloat)cornerRadius;
